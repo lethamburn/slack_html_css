@@ -1,0 +1,66 @@
+.footer__icon__container {
+  background-color: white;
+  width: 91.5%;
+  padding-left: 40px;
+  padding-top: 40px;
+
+  .footer__icon {
+    height: 70px;
+  }
+}
+
+footer {
+  padding: 20px;
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .list__item {
+    padding: 10px;
+    width: 120px;
+
+    li {
+      margin-top: 20px;
+      font-size: 13px;
+      list-style: none;
+
+      &.list__item--title {
+        font-weight: bold;
+      }
+      a {
+        font-size: 13px;
+      }
+      &.list__item--world {
+        font-size: 13px;
+        color: $blue-color;
+
+        &::before {
+          content: "🌐";
+        }
+      }
+      &.list__item--download {
+        font-size: 13px;
+        color: $blue-color;
+        &::before {
+          content: "☁️";
+        }
+      }
+    }
+  }
+  .footer__line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 3px solid rgb(196, 196, 196);
+  }
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 30px;
+    }
+  }
+}

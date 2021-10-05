@@ -1,0 +1,24 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.partners__img {
+  width: 98%;
+}
+
+.partners__labels {
+    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  img{
+      margin: 10px;
+      max-width: 120px;
+      height: 100%;
+
+  }
+}

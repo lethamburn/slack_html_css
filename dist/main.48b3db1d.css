@@ -1,10 +1,328 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
+  font-family: Helvetica;
 }
 
 body {
   background-color: #F6EFE8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+.navigator .navigator__logo {
+  height: 30%;
+}
+.navigator .navigator__menu {
+  height: 25%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 44px;
+  font-weight: bolder;
+  margin: 16px;
+}
+.hero p {
+  font-size: 16px;
+  margin: 16px;
+}
+.hero .hero__item {
+  text-align: center;
+  padding: 20px 4px;
+  height: 16px;
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+.hero .hero__item.hero__item--slack {
+  background-color: #4A154B;
+}
+.hero .hero__item.hero__item--google {
+  background-color: #1264A3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hero .hero__item.hero__item--google img {
+  height: 49px;
+  border-radius: 4px;
+  background-color: white;
+  margin-right: 48px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.partners__img {
+  width: 98%;
+}
+
+.partners__labels {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.partners__labels img {
+  margin: 10px;
+  max-width: 120px;
+  height: 100%;
+}
+
+.stepbystep {
+  padding: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.stepbystep .stepbystep__article h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.stepbystep .stepbystep__article p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.stepbystep .stepbystep__article a {
+  font-size: 18px;
+  color: #1264a3;
+}
+.stepbystep .stepbystep__article a::after {
+  content: "→";
+}
+.stepbystep .stepbystep__article img {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+}
+.stepbystep .stepbystep__article .stepbystep__description {
+  display: flex;
+  justify-content: space-between;
+}
+.stepbystep .stepbystep__article .stepbystep__description p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.firststeps {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  font-size: 20px;
+}
+.firststeps h1 {
+  text-align: center;
+}
+.firststeps .firststeps__number {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: #4A154B;
+  color: white;
+  border-radius: 8px;
+}
+.firststeps .firststeps__number p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 0.6;
+}
+.firststeps h3 {
+  margin-top: 14px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+.firststeps p {
+  margin-top: 14px;
+  font-size: 15px;
+}
+.firststeps a {
+  text-decoration: underline;
+  color: #1264a3;
+}
+.firststeps .firststeps__functionscontainer {
+  display: flex;
+  justify-content: center;
+}
+.firststeps .firststeps__functionscontainer .firststeps__functions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 2px;
+  margin-top: 40px;
+  background-color: white;
+  width: 60%;
+}
+.firststeps .firststeps__functionscontainer .firststeps__functions img {
+  margin-top: 12px;
+  margin-left: 12px;
+  width: 90%;
+}
+.firststeps .firststeps__functionscontainer .firststeps__functions p {
+  font-size: 14px;
+  padding: 8px;
+}
+.firststeps .firststeps__functionscontainer .firststeps__functions h2 {
+  font-size: 18px;
+  padding: 8px;
+}
+.firststeps .firststeps__functionscontainer .firststeps__functions a {
+  margin-top: 40px;
+  padding: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+.firststeps .firststeps__functionscontainer .firststeps__functions a::after {
+  padding-left: 40px;
+  content: "→";
+}
+.firststeps .dots__container {
+  display: flex;
+  justify-content: center;
+}
+.firststeps .dots__container .dots {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #4A154B;
+  height: 12px;
+  width: 12px;
+  border-radius: 250px;
+}
+.firststeps .dots__container .dots.dots--grey {
+  background-color: grey;
+}
+
+.pre-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #4A154B;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.pre-footer h2 {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.pre-footer a {
+  text-align: center;
+  padding: 20px 4px;
+  height: 16px;
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+.pre-footer a.pre-footer--try {
+  background-color: white;
+  color: #4A154B;
+}
+.pre-footer a.pre-footer--contact {
+  border: solid white 1px;
+}
+.pre-footer .pre-footer__curve {
+  clip-path: ellipse(105% 100% at center top);
+}
+
+.footer__icon__container {
+  background-color: white;
+  width: 91.5%;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.footer__icon__container .footer__icon {
+  height: 70px;
+}
+
+footer {
+  padding: 20px;
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .list__item {
+  padding: 10px;
+  width: 120px;
+}
+footer .list__item li {
+  margin-top: 20px;
+  font-size: 13px;
+  list-style: none;
+}
+footer .list__item li.list__item--title {
+  font-weight: bold;
+}
+footer .list__item li a {
+  font-size: 13px;
+}
+footer .list__item li.list__item--world {
+  font-size: 13px;
+  color: #1264A3;
+}
+footer .list__item li.list__item--world::before {
+  content: "🌐";
+}
+footer .list__item li.list__item--download {
+  font-size: 13px;
+  color: #1264A3;
+}
+footer .list__item li.list__item--download::before {
+  content: "☁️";
+}
+footer .footer__line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 3px solid #c4c4c4;
+}
+footer .footer__social {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__social img {
+  height: 30px;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

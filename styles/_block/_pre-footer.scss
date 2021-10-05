@@ -1,0 +1,39 @@
+.pre-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $purple-color;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  a {
+    text-align: center;
+    padding: 20px 4px;
+    height: 16px;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 14px;
+
+    &.pre-footer--try {
+      background-color: white;
+      color: $purple-color;
+    }
+    &.pre-footer--contact {
+      border: solid white 1px;
+    }
+  }
+  .pre-footer__curve {
+    clip-path: ellipse(105% 100% at center top);
+  }
+}
